@@ -9,6 +9,22 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>Document</title>
+
+  <style>
+    .clearBtn {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .btn:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+
+    .btn {
+      background: rgb(235, 17, 17);
+    }
+  </style>
 </head>
 
 <body>
@@ -16,6 +32,9 @@
     <div class="row">
       <div class="col s12">
         <div id="main" class="card">
+          <div class="clearBtn">
+            <button class="btn">Clear Your Local Storage</button>
+          </div>
           <div class="card-content">
             <span class="card-title">Task List</span>
             <div class="row">
@@ -25,7 +44,7 @@
                   <input type="text" name="task" id="task">
                 </div>
             </div>
-            <input type="submit" value="Add Task" class="btn">
+            <input type="submit" value="Add Task" class="btn add-tasks green">
             </form>
           </div>
           <div class="card-action">
@@ -62,7 +81,7 @@
                 </a>
               </li>
             </ul>
-            <a class="clear-tasks btn black" href="">Clear Tasks</a>
+            <a class="clear-tasks btn " href="">Clear Tasks</a>
           </div>
         </div>
       </div>
